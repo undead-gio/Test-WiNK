@@ -1,18 +1,127 @@
-.App {
-  text-align: center;
+* {
+  color: #535353;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  border-bottom: 0.3px solid #ececec;
+  padding-left: 20px !important;
+  padding-left: 20px !important;
+  background-color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  margin: 0;
+  font-weight: bold;
+  color: #7a70fb;
 }
-
+.s-logo{
+  color: #ff8a9a;
+}
+.search{
+  margin-left: 30px !important;
+  border: 0 !important;
+  font-weight: 400!important;
+  border-radius: 20px !important;
+  background: url(/img/search-black-18dp.svg)  no-repeat;
+  padding-left: 40px !important;
+  width: 50vw !important;
+}
+.search:focus {
+    border-color: #b6e4fe !important;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem rgba(182,225,254,1) !important;
+}
+.illustration {
+  background: url(/img/undraw_book_lover_mkck.svg)  no-repeat;
+}
+.spinn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.card-group{
+  padding-top: 30px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.no-pad{
+  padding: 0 !important;
+}
+.pad-list{
+  padding-top: 95px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.browse{
+  font-weight: bold;
+  color: #697077;
+}
+.cardBook{
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+.cardCol:hover .img-card{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.col-textcard{
+  padding-left: 20px !important;
+}
+.img-card{
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.4);
+  webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.tit{
+  font-size: 20px;
+  font-weight: 700;
+}
+.text{
+  font-weight: 400;
+  color:#697077;
+  padding-top: 10px;
+}
+.vol-info{
+  color:#c1c1c1;
+  font-weight: 500;
+  font-size: 13px;
+}
+.img-modal{
+  width: 60%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.4);
+}
+.truncate{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.infoBook{
+  padding-right: 40px;
+}
+.h5-info {
+  color: #c1c1c1;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 8px;
+}
+.p-info{
+  font-weight: 400;
+  color:#697077;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,12 +136,77 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.h1-hero{
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.span-hero{
+  font-weight: 800;
+  color: #ff8a9a;
+}
+.h4-hero{
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #c1c1c1;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+.p-hero{
+  color: #7a70fb;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.btn{
+  border-radius: 20px !important;
+  background-color: #7a70fb !important;
+  border-color: #7a70fb !important;
+}
+.dropdown-item{
+  text-align: center !important;
+}
+.page-item.active .page-link {
+  background-color: #7a70fb !important;
+  border-color: #7a70fb !important;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #7a70fb !important;
+}
+.modal-content {
+    border: 0 !important;
+    border-radius: 25px!important;
+}
+@media (min-width: 576px) {
+  .nav{
+    padding-left: 80px !important;
+    padding-left: 80px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .pad-list{
+    padding-top: 95px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .search{
+    width: 30vw !important;
+  }
+  .col-textcard{
+    padding-left: 0px !important;
+  }
+  .img-card{
+    width: 90%;
+  }
+
+}
+@media (min-width: 768px) {
+  .img-modal{
+    width: 100%;
+    margin-bottom: 0px;
   }
 }
+
+
+@media (min-width: 992px) {  }
